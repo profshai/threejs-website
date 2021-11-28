@@ -1,0 +1,192 @@
+@keyframes mymove {
+  30% {
+    background: linear-gradient(217deg,
+        rgba(235, 216, 216, 0.8),
+        rgba(179, 81, 81, 0) 70.71%),
+      linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  }
+}
+
+@keyframes shai {
+  30% {
+    background-color: #7dbfe7;
+  }
+}
+
+canvas {
+  position: relative;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  padding-top: 65px;
+  padding-bottom: 100px;
+  z-index: -1;
+  margin: 0px;
+  padding-right: 5px;
+  background-color: #cccccc;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main {
+  width: 100vw;
+  color: white;
+  /* z-index: 99; */
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  z-index: 0;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1,
+h2,
+h3,
+blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  background: var(--dark-bg);
+  grid-column: 2 / span 5;
+  font-size: 2.5rem;
+  padding: 2rem;
+  margin-bottom: var(--spacing);
+}
+
+section {
+  grid-column: 2 / 8;
+  padding: 1rem;
+  background: var(--dark-bg);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  z-index: 2;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+  grid-column: 2 / span 9;
+  margin-bottom: var(--spacing);
+  z-index: 2;
+}
+
+blockquote p {
+  color: black;
+  background-color: white;
+  font-size: 4rem;
+  display: inline;
+  line-height: 1;
+  z-index: 2;
+}
+
+.left {
+  grid-column: 6 / 12;
+}
+
+.b {
+  float: right;
+}
+
+li {
+  display: inline;
+  padding-right: 30px;
+  /* font-weight: bold; */
+  font-size: 24px;
+  /* float: left; */
+  margin: 0 15px;
+  padding-top: 0px;
+}
+
+nav {
+  background-color: #0e7bda;
+  animation: shai 5s infinite;
+}
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 75px;
+  position: fixed;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  margin-bottom: 5px;
+}
+
+footer {
+  display: block;
+  color: rgb(39, 37, 37);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 0px;
+  width: 100%;
+  background-color: #cccccc;
+  animation: mymove 5s infinite;
+}
+
+footer a {
+  padding: 18px 10px;
+}
+
+footer p {
+  padding-bottom: 2%;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(12, 1, 1);
+}
+
+a strong {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  li {
+    font-size: 20px;
+    margin-left: 0px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    grid-column: 2 / 10;
+    margin-left: 0px;
+  }
+}
