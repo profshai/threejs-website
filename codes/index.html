@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <title>Shaibu's Website</title>
   </head>
   <body>
@@ -13,10 +13,11 @@
       <nav class="header">
         <ul>
           <li class="a">
-            <a href="#home">Home</a>
+            <a class="happy" href="#home">Home</a>
           </li>
           <li class="b">
             <a
+              class="happy"
               href="https://github.com/profshai"
               target="“_blank”"
               rel="“noopener”"
@@ -24,10 +25,10 @@
             >
           </li>
           <li class="b">
-            <a href="#interest">Interests</a>
+            <a class="happy" href="#interest">Interests</a>
           </li>
           <li class="b">
-            <a href="#contact">Contact</a>
+            <a class="happy" href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -87,7 +88,12 @@
         <p>
           Do you want to know how much tip to give to the waiter or driver?
           Click on this
-          <a href="https://www.google.com"><strong>link</strong></a>
+          <a
+            href="https://csb-urx6l.netlify.app/"
+            target="“_blank”"
+            rel="“noopener”"
+            ><strong>link</strong></a
+          >
         </p>
       </section>
 
@@ -100,7 +106,12 @@
         <p>
           Do you have something you want to count but tend to forget which
           number you are at, in the middle of counting? Click on this
-          <a href="https://www.google.com"><strong>link</strong></a>
+          <a
+            href="https://csb-urx6l.netlify.app/"
+            target="“_blank”"
+            rel="“noopener”"
+            ><strong>link</strong></a
+          >
         </p>
       </section>
 
@@ -124,14 +135,14 @@
           Thanks for checking out my website. I hope you liked what you saw! ❤️
         </p>
       </section>
-
-      <blockquote id="contact">
-        <p></p>
-      </blockquote>
     </main>
 
+    <blockquote id="contact">
+      <p></p>
+    </blockquote>
+
     <footer>
-      <p class="hello">CONTACT ME:</p>
+      <!-- <p class="hello">CONTACT ME:</p> -->
       <div class="container-fluid">
         <a
           href="https://github.com/profshai"
@@ -164,10 +175,17 @@
         >
           <i class="fab fa-twitter fa-2x"></i>
         </a>
+        <p class="copyright">
+          Copyright ©
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          <!-- https://updateyourfooter.com/ -->
+        </p>
       </div>
     </footer>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./src/index.js"></script>
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
